@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard/Dashboard';
 import Shops from './pages/shops/Shops';
 import Carts from './pages/carts/Carts';
-import Payments from './pages/payments/Payments';
 import Profile from './pages/profile/Profile';
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme';
@@ -22,9 +21,7 @@ ReactDOM.render(
             <Route path=":id" element={<Shops />} />
           </Route>
           <Route exact path="carts" element={<Carts />} />
-          <Route exact path="payments" element={<Payments />} />
           <Route exact path="profile" element={<Profile />} />
-          {/* <Route exact path="restaurant" element={<Restaurant />} /> */}
         </Route>
       </Routes>
     </Router>
