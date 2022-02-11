@@ -14,22 +14,23 @@ export default function ordersNo2() {
   return (
     <Box>
       <Grid sx={{ mb: -5 }}>
-        <Typography component="p" variant="h4" sx={{ mb: 1 }}>
+        <Typography component="p" variant="h4" sx={{ mb: 1, fontWeight: 500 }}>
           12
         </Typography>
         <Title>Orders Cancelled</Title>
       </Grid>
       <Toolbar />
-      <div>
+      <Grid>
         <Link
           color="text.primary"
           href="#"
           underline="none"
           onClick={preventDefault}
+          sx={{ fontSize: 14, fontWeight: 500 }}
         >
           View Cancelled Orders
         </Link>
-      </div>
+      </Grid>
     </Box>
   );
 }

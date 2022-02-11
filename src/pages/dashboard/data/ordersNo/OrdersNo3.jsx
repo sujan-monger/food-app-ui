@@ -14,22 +14,28 @@ export default function Deposits() {
   return (
     <Box>
       <Grid sx={{ mb: -5 }}>
-        <Typography component="p" variant="h4" sx={{ mb: 1 }}>
+        <Typography component="p" variant="h4" sx={{ mb: 1, fontWeight: 500 }}>
           9
         </Typography>
         <Title>Today Delivery</Title>
       </Grid>
       <Toolbar />
-      <div>
+      <Grid>
         <Link
           color="text.primary"
           href="#"
           underline="none"
           onClick={preventDefault}
+          sx={{
+            fontSize: 14,
+            fontWeight: 500,
+            alignItems: 'end',
+            justifyContent: 'end',
+          }}
         >
           View Deliverys
         </Link>
-      </div>
+      </Grid>
     </Box>
   );
 }
