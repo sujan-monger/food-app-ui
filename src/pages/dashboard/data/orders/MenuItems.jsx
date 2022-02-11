@@ -10,7 +10,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import { tableData } from './tableData';
+import { DataTable } from './DataTable';
 
 const tables = () => {
   return (
@@ -64,7 +64,7 @@ const tables = () => {
               ></TableCell>
             </TableRow>
           </TableHead>
-          {tableData.map((item, index) => (
+          {DataTable.map((item, index) => (
             <TableBody key={item.id}>
               <TableRow>
                 <TableCell sx={{ borderBottom: 'none', p: '0px 14px 0px 0px' }}>

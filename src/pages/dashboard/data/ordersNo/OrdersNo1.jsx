@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import Title from '../Title';
+import Grid from '@mui/material/Grid';
 
 function preventDefault(event) {
   event.preventDefault();
@@ -12,14 +13,21 @@ function preventDefault(event) {
 export default function Deposits() {
   return (
     <Box>
-      <Typography component="p" variant="h4">
-        12
-      </Typography>
-      <Title>Total Orders</Title>
+      <Grid sx={{ mb: -5 }}>
+        <Typography component="p" variant="h4" sx={{ mb: 1 }}>
+          15
+        </Typography>
+        <Title>Total Delivered</Title>
+      </Grid>
       <Toolbar />
       <div>
-        <Link color="primary" href="#" onClick={preventDefault}>
-          View all orders
+        <Link
+          color="text.primary"
+          href="#"
+          underline="none"
+          onClick={preventDefault}
+        >
+          View Delivered
         </Link>
       </div>
     </Box>

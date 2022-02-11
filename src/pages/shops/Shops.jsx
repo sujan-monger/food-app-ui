@@ -66,7 +66,7 @@ const Shops = () => {
           flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'space-between',
-          mt: 0,
+          mt: -2,
           mb: 3,
         }}
       >
