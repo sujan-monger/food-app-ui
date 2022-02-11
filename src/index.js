@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/_index.scss';
+import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/dashboard/Dashboard';
+import Shops from './pages/shops/Shops';
+import Carts from './pages/carts/Carts';
+import Payments from './pages/payments/Payments';
+import Profile from './pages/profile/Profile';
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from './theme';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route exact path="dashboard" element={<Dashboard />} />
+          <Route exact path="shops" element={<Shops />}>
+            <Route path=":id" element={<Shops />} />
+          </Route>
+          <Route exact path="carts" element={<Carts />} />
+          <Route exact path="payments" element={<Payments />} />
+          <Route exact path="profile" element={<Profile />} />
+          {/* <Route exact path="restaurant" element={<Restaurant />} /> */}
+        </Route>
+      </Routes>
+    </Router>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 
