@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
 
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
 import Title from '../Title';
