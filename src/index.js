@@ -16,12 +16,12 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route exact path="dashboard" element={<Dashboard />} />
-          <Route exact path="shops" element={<Shops />}>
-            <Route path=":id" element={<Shops />} />
-          </Route>
-          <Route exact path="carts" element={<Carts />} />
-          <Route exact path="profile" element={<Profile />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/shops" element={<Shops />}>
+            <Route path="/shops/:id" element={<Shops />} />
+              </Route>
+          <Route exact path="/carts" element={<Carts />} />
+          <Route exact path="/profile" element={<Profile />} />
         </Route>
       </Routes>
     </Router>
