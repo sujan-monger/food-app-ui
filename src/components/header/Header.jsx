@@ -188,7 +188,7 @@ const Header = ({ window, title }) => {
             },
             '& .Mui-selected': {
               backgroundColor: 'rgba(234, 43, 70, 0.1)',
-              color: '#394A59',
+              color: '#EA2B46',
             },
             '& .Mui-selected:hover': {
               backgroundColor: 'rgba(234, 43, 70, 0.1)',
