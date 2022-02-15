@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import Title from '../Title';
 import Grid from '@mui/material/Grid';
-import { fontWeight } from '@mui/system';
 
 function preventDefault(event) {
   event.preventDefault();

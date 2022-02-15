@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
-import { Container, Paper } from '@mui/material';
+import { Container } from '@mui/material';
 
 const drawerWidth = 260;
 
