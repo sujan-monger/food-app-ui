@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/_index.scss';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard/Dashboard';
 import Shops from './pages/shops/Shops';
 import Carts from './pages/carts/Carts';
@@ -13,18 +13,17 @@ import { theme } from './theme';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <HashRouter>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/food-app-ui/" element={<App />}>
-          <Route exact path="/food-app-ui/dashboard" element={<Dashboard />} />
-          <Route exact path="/food-app-ui/shops" element={<Shops />}>
-            <Route path="/food-app-ui/shops/:id" element={<Shops />} />
-          </Route>
-          <Route exact path="/food-app-ui/carts" element={<Carts />} />
-          <Route exact path="/food-app-ui/profile" element={<Profile />} />
+        <Route path="/" element={<App />}>
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/shops" element={<Shops />} />
+//             <Route path="/shops/:id" element={<Shops />} />
+          <Route exact path="/carts" element={<Carts />} />
+          <Route exact path="/profile" element={<Profile />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </Router>
   </ThemeProvider>,
   document.getElementById('root')
 );
