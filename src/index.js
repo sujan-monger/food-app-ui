@@ -17,8 +17,9 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route exact path="/dashboard" element={<Dashboard />} />
-          <Route exact path="/shops" element={<Shops />} />
-//             <Route path="/shops/:id" element={<Shops />} />
+          <Route exact path="/shops" element={<Shops />}>
+            <Route path="/shops/:id" element={<Shops />} />
+              </Route>
           <Route exact path="/carts" element={<Carts />} />
           <Route exact path="/profile" element={<Profile />} />
         </Route>
