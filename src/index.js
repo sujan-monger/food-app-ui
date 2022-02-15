@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/_index.scss';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard/Dashboard';
 import Shops from './pages/shops/Shops';
 import Carts from './pages/carts/Carts';
