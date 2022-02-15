@@ -13,7 +13,7 @@ import { theme } from './theme';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Router basename="/app">
+    <Router basename={window.location.pathname || ''}>
       <Routes>
         <Route path="/" element={<App />}>
           <Route exact path="dashboard" element={<Dashboard />} />
