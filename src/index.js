@@ -13,9 +13,9 @@ import { theme } from './theme';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Router>
+    <Router basename="/app">
       <Routes>
-        <Route path="/app" element={<App />}>
+        <Route path="/" element={<App />}>
           <Route exact path="dashboard" element={<Dashboard />} />
           <Route exact path="shops" element={<Shops />}>
             <Route path=":id" element={<Shops />} />
