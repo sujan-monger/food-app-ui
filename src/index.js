@@ -15,13 +15,13 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route exact path="dashboard" element={<Dashboard />} />
-          <Route exact path="shops" element={<Shops />}>
-            <Route path=":id" element={<Shops />} />
+        <Route path="/food-app-ui/" element={<App />}>
+          <Route exact path="/food-app-ui/dashboard" element={<Dashboard />} />
+          <Route exact path="/food-app-ui/shops" element={<Shops />}>
+            <Route path="/food-app-ui/shops/:id" element={<Shops />} />
           </Route>
-          <Route exact path="carts" element={<Carts />} />
-          <Route exact path="profile" element={<Profile />} />
+          <Route exact path="/food-app-ui/carts" element={<Carts />} />
+          <Route exact path="/food-app-ui/profile" element={<Profile />} />
         </Route>
       </Routes>
     </HashRouter>
