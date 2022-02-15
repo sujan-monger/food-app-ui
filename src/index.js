@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './styles/_index.scss';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard/Dashboard';
 import Shops from './pages/shops/Shops';
 import Carts from './pages/carts/Carts';
@@ -13,7 +13,7 @@ import { theme } from './theme';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <Router basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<App />}>
           <Route exact path="/dashboard" element={<Dashboard />} />
@@ -23,7 +23,7 @@ ReactDOM.render(
           <Route exact path="/profile" element={<Profile />} />
         </Route>
       </Routes>
-    </Router>
+    </HashRouter>
   </ThemeProvider>,
   document.getElementById('root')
 );
