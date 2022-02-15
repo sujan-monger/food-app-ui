@@ -61,7 +61,7 @@ const Navbar = () => {
           height: '80px',
         }}
       >
-        <Link href="/food-app-ui/dashboard" underline="none">
+        <Link href="#" underline="none">
           <Typography variant="h5" color="primary" fontWeight="700">
             Food App
           </Typography>
