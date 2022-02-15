@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -8,7 +7,7 @@ import { CardMedia } from '@mui/material';
 const Welcome = () => {
   return (
     <Grid container>
-      <Grid sx={{ display: 'flex', p: '30px' }}>
+      <Grid sx={{ display: 'flex', p: '26px' }}>
         <Grid>
           <Typography
             variant="h4"
