@@ -13,7 +13,7 @@ import { theme } from './theme';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <HashRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<App />}>
           <Route exact path="/dashboard" element={<Dashboard />} />
@@ -24,7 +24,7 @@ ReactDOM.render(
           <Route exact path="/profile" element={<Profile />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </Router>
   </ThemeProvider>,
   document.getElementById('root')
 );
