@@ -15,7 +15,7 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/app" element={<App />}>
           <Route exact path="dashboard" element={<Dashboard />} />
           <Route exact path="shops" element={<Shops />}>
             <Route path=":id" element={<Shops />} />
