@@ -76,7 +76,7 @@ const Carts = () => {
               }}
             >
               <Link
-                href="shops"
+                href="#"
                 underline="none"
                 color="text.primary"
                 sx={{ display: 'flex', alignItems: 'center' }}
