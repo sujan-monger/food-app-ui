@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.7e368186.css","mappings":"kOACA,KACE","sources":["styles/index.scss"],"sourcesContent":["@import './variables/Variables.scss';\nbody {\n  font-family: $my-fonts;\n}\n"],"names":[],"sourceRoot":""}
