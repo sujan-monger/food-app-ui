@@ -67,7 +67,6 @@ const Shops = () => {
           alignItems: 'center',
           justifyContent: 'space-between',
           mt: -2,
-          mb: 3,
         }}
       >
         <Search sx={{ ml: 2.5 }}>

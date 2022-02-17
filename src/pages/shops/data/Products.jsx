@@ -20,6 +20,7 @@ const Products = () => {
         direction: 'row',
         justifyContent: 'start',
         alignItems: 'start',
+        mb: 3,
       }}
     >
       {productItems.map((item, index) => (
