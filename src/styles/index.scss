@@ -1,7 +1,7 @@
 @import './variables/Variables.scss';
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: $my-fonts;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
