@@ -9,12 +9,8 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import AddShoppingCartRoundedIcon from '@mui/icons-material/AddShoppingCartRounded';
 import { productItems } from './productItems';
-// import { useNavigate, useLocation } from 'react-router-dom';
-// import ProductDetails from './productsDetails/ProductsDetails';
 
 const Products = () => {
-  // const navigate = useNavigate();
-
   return (
     <Grid
       container
@@ -49,7 +45,7 @@ const Products = () => {
             />
 
             <CardContent>
-              <Link href={'/product/' + item.id} underline="none">
+              <Link href="#" underline="none">
                 <Typography
                   variant="h6"
                   sx={{

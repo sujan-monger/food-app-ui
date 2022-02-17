@@ -6,7 +6,7 @@ import OrdersNo from './data/ordersNo/OrdersNo';
 import OrdersNo1 from './data/ordersNo/OrdersNo1';
 import OrdersNo2 from './data/ordersNo/OrdersNo2';
 import OrdersNo3 from './data/ordersNo/OrdersNo3';
-import MenuItems from './data/orders/MenuItems';
+import MenuItems from './data/menuItems/MenuItems';
 import OrderSummary from './data/orderSummary/OrderSummary';
 import { Container } from '@mui/material';
 import Welcome from './data/welcome/Welcome';
